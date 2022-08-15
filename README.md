@@ -12,8 +12,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/product-preview-card-using-grid-and-a-mobile-first-approach-63Lcn9lAG6)
 - Live Site URL: [GitHub Pages](https://markvanweersch.github.io/product-preview-card-component/)
 
 ## My process

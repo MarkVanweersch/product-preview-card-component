@@ -108,7 +108,8 @@ picture img {
   border-radius: 0.5em;
 }
 
-.info-container button:hover {
+.info-container button:hover,
+.info-container button:focus {
   background-color: var(--darker-cyan);
   cursor: pointer;
 }

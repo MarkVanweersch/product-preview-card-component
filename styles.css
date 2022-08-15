@@ -1,0 +1,149 @@
+:root {
+  --ff-regular: 'Montserrat', sans-serif;
+  --ff-fancy: 'Fraunces', serif;
+
+  --dark-cyan: hsl(158, 36%, 37%);
+  --darker-cyan: hsl(158, 36%, 20%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --rounded-corners: 0.75em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* font families: 
+font-family: 'Fraunces', serif; 
+font-family: 'Montserrat', sans-serif; */
+
+html {
+  font-family: 'Montserrat', serif;
+}
+
+body, h1, picture, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark-grayish-blue);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  max-width: 335px;
+  background-color: var(--white);
+  border-radius: var(--rounded-corners);
+}
+
+picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--rounded-corners) var(--rounded-corners) 0 0;
+}
+
+.info-container {
+  padding: 1.25em 1.25em 1.5em;
+}
+
+.info-container .category {
+  font-size: 0.7em;
+  letter-spacing: 0.4em;
+}
+
+.info-container h1 {
+  font-family: var(--ff-fancy);
+  color: var(--very-dark-blue);
+  margin: 0.2em 0 0.5em;
+}
+
+.info-container p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.info-container .price-container {
+  display: flex;
+  align-items: center;
+  margin: 1.25em 0 1em;
+}
+
+.price-container .price {
+  font-family: var(--ff-fancy);
+  font-size: 2em;
+  color: var(--dark-cyan);
+}
+
+.price-container .old-price {
+  font-size: 0.8em;
+  margin-left: 1.5em;
+}
+
+.info-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+
+  padding: 1.25em 0;
+  width: 100%;
+
+  font-family: var(--ff-regular);
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 0.5em;
+}
+
+.info-container button:hover {
+  background-color: var(--darker-cyan);
+  cursor: pointer;
+}
+
+.info-container button span {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 625px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
+
+  picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--rounded-corners) 0 0 var(--rounded-corners);
+  }
+
+  .info-container {
+    padding: 1.5em 2em;
+  }
+
+  .info-container h1 {
+    line-height: 1em;
+    margin: 0.5em 0;
+  }
+
+  .info-container p {
+    margin: 2em 0;
+  }
+
+  .info-container .price-container {
+    margin: 2em 0;
+  }
+}

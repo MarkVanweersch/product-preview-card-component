@@ -56,7 +56,10 @@ picture img {
 }
 
 .info-container {
-  padding: 1.25em 1.25em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 1.25em;
 }
 
 .info-container .category {
@@ -67,7 +70,6 @@ picture img {
 .info-container h1 {
   font-family: var(--ff-fancy);
   color: var(--very-dark-blue);
-  margin: 0.2em 0 0.5em;
 }
 
 .info-container p {
@@ -78,7 +80,7 @@ picture img {
 .info-container .price-container {
   display: flex;
   align-items: center;
-  margin: 1.25em 0 1em;
+  gap: 1.5em;
 }
 
 .price-container .price {
@@ -89,7 +91,6 @@ picture img {
 
 .price-container .old-price {
   font-size: 0.8em;
-  margin-left: 1.5em;
 }
 
 .info-container button {
@@ -132,19 +133,15 @@ picture img {
   }
 
   .info-container {
-    padding: 1.5em 2em;
+    padding: 2em;
+    gap: 1.5em;
   }
 
   .info-container h1 {
     line-height: 1em;
-    margin: 0.5em 0;
   }
 
-  .info-container p {
-    margin: 2em 0;
-  }
-
-  .info-container .price-container {
-    margin: 2em 0;
+  .price-container {
+    padding: 0.5em 0;
   }
 }
